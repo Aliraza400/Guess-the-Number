@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <link rel="icon" href="icons8-thinking-48.png" type="./png">
+
+    <style>
+        body {
+
+            background-image: linear-gradient(120deg, #84aedb, #86c8d4);
+        }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px auto;
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-shadow: 0 2px 8px #e0e0e0;
+        cursor: pointer;
+      }
+
+      button {
+
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        border-radius: 20px;
+        border: #86c8d4;
+        background-color: #86c8d4;
+        transition: all .25s ease-in;
+      }
+
+      button:hover {
+
+        background-color: #679da7;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <p id="myText" style="font-size: 18px; font-weight: bold;"></p>
+
+        <p id="myText-1" style="font-size: 18px; font-weight: bold;"></p>
+
+        <p id="myText-2" style="font-size: 18px; font-weight: bold;"></p>
+
+        <button id="guess">Guess the Number</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
